@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LilyPadScene.unity
+    guid: 2aeb307e9a8d2e746b54f6586feb12c9
   m_configObjects: {}
