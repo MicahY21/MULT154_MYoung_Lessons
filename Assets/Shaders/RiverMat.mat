@@ -37,7 +37,10 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
+    - _BaseRiverColor: {r: 0, g: 0.8839016, b: 1, a: 0}
+    - _HighlightColor: {r: 0, g: 0.32575557, b: 1, a: 0}
     - _NoiseSize: {r: 0, g: 0, b: 0, a: 0}
+    - _Vector2: {r: 0.21, g: 0, b: 0, a: 0}
     - _Wave1Frequency: {r: 5.83, g: 0, b: 0, a: 0}
     - _Wave1Speed: {r: 6.14, g: 0, b: 0, a: 0}
     - _Wave2Angle: {r: 0, g: 0, b: 0, a: 0}
