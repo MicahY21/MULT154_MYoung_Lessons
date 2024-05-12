@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NavPlayerMovement : MonoBehaviour
 {
-    public float speed = 80.0f;
+    public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
     Rigidbody rgBody = null;
     float trans = 0;
@@ -54,6 +54,23 @@ public class NavPlayerMovement : MonoBehaviour
         // Rotate around our y-axis
         transform.Rotate(0, rotation, 0);
     }
+
+    private void FixedUpdate()
+    {
+        Vector3 rot = transform.rotation.eulerAngles;
+        rot.y += rotate * rotationSpeed * Time.deltaTime;
+        rgBody.MoveRotation(Quaternion.Euler(rot));
+        rotate = 0;
+
+        Vector3 move = transform.forward * trans * speed;
+        move.y = rgBody.velocity.y;
+        rgBody.velocity = move;// * Time.deltaTime;
+
+        trans = 0;
+
+    }
+
+
 
     private void OnCollisionEnter(Collision collision)
     {
