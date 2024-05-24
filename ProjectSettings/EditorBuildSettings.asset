@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LilyPadScene.unity
     guid: 2aeb307e9a8d2e746b54f6586feb12c9
+  - enabled: 1
+    path: Assets/Scenes/Start Scene.unity
+    guid: 76481784192b43249a4cb5cfe6bd734a
+  - enabled: 1
+    path: Assets/Scenes/ForestLevel.unity
+    guid: 637ab9b94d66249418eba3cdbff584d4
   m_configObjects: {}
